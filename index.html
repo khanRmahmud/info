@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Khan Raqib Mahmud</title>
+
+    <meta name="author" content="Khan Raqib Mahmud">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Khan Raqib Mahmud
+                </p>
+                <p>I'm a PhD student in Computational Analysis and Modeling at <a href="https://www.latech.edu/">Louisiana Tech University</a> in Ruston, Louisiana where I work as a Graduate Research Assistant in <a href="https://lingxiaow.github.io/index/">Automatic Control Lab</a>.
+                </p>
+                <p>
+                  I did my Master's in Computer Simulation for Science and Engineering (COSSE), part of the <a href="https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en?prefLang=sl"> Erasmus Mundus Masters</a> program, at <a href="https://www.kth.se/en">KTH Royal Institute of Technology</a> in Stockholm, Sweden, and <a href="https://www.fau.eu/">Friedrich-Alexander University of Erlangen-Nuremberg</a> in Germany. Additionally, I was awarded a Master's in Computational Engineering as part of this same program. Prior to this, I completed both my Bachelor's and Master's degrees in Mathematics at <a href="https://www.sust.edu/">Shahjalal University of Science and Technology</a> in Bangladesh.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:krm070@latech.edu">Email</a> &nbsp;|&nbsp;
+                  <a href="data//CV_KHAN_RAQIB.pdf">CV</a> &nbsp;|&nbsp;
+                  <a href="https://scholar.google.com/citations?user=g64GPuIAAAAJ&hl=en">Scholar</a> &nbsp;|&nbsp;
+                  <a href="https://github.com/khanRmahmud">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/khan.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/khan.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  My research interest lies on developing methodologies for AI based intelligent automated system employing Computer Vision, Large Language Models, Deep Learning techniques, Reinforcement Learning and Transfer Learning to address complex real-world challenges. My goal is to investigate and implement cutting-edge vision-based AI algorithms, utilizing advanced deep learning techniques, large language models and reinforcement learning to create intelligent systems capable of autonomous decision-making.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="image-sequence" style="position:relative;">
+          <img id="hover-image" src="images/final-model-5-1.jpg" width="100%" style="display:block; transition: opacity 0.5s;">
+        </div>
+        <script type="text/javascript">
+          // List of images to cycle through
+          const images = [
+            'images/final-model-5-1.jpg',
+            'images/our-model-v1.jpg',
+            'images/uav_smoke200_jpg.jpg'
+          ];
+      
+          // Variables for image cycling
+          let currentImageIndex = 0;
+          const hoverImage = document.getElementById('hover-image');
+      
+          // Function to start the image cycle
+          function startImageCycle() {
+            // Change image every 1 second
+            hoverImage.interval = setInterval(() => {
+              currentImageIndex = (currentImageIndex + 1) % images.length;
+              hoverImage.src = images[currentImageIndex];
+            }, 1000);
+          }
+      
+          // Function to stop the image cycle
+          function stopImageCycle() {
+            clearInterval(hoverImage.interval);
+            currentImageIndex = 0;
+            hoverImage.src = images[currentImageIndex]; // Reset to the first image
+          }
+      
+          // Event listeners for mouse hover
+          hoverImage.addEventListener('mouseover', startImageCycle);
+          hoverImage.addEventListener('mouseout', stopImageCycle);
+        </script>
+      </td>
+      
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://nerf-casting.github.io/">
+          <span class="papertitle">Deep Learning-based Wildfire Smoke Detection using Uncrewed Aircraft System Imagery</span>
+        </a>
+        <br>
+				
+        <strong>Khan Raqib Mahmud</strong>,
+        <a href="https://lingxiaow.github.io/index/">Lingxiao Wang</a>,
+				<a href="https://www.latech.edu/faculty-staff/single-entry/name/xiyuan-liu-1/">Xiyuan Liu</a>,
+				<a href="https://benattal.github.io/">Jiahao Li</a>, <br>
+				<a href="https://bmild.github.io/">Sunzid Hassan</a>,
+        <br>
+        <em>IEEE International Conference on Ubiquitous Robots (UR)</em>, 2024
+        <br>
+        <a href="https://nerf-casting.github.io/">project page</a>
+        /
+        <a href="https://ieeexplore.ieee.org/abstract/document/10597449">IEE UR 2024</a>
+        <p></p>
+        <p>
+          Uncrewed Aircraft System (UAS)-based wildfire smoke detection using image segmentation and object detection to enhance accuracy and reduce false positives from non-forest areas.
+        </p>
+      </td>
+    </tr>
+
+          </tbody></table>
+
+          
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/UR-2024.JPG" style="max-width: 100px; height: auto;"></td>
+              <td width="75%" valign="center">
+                <a href="https://2024.ubiquitousrobots.org/">Research article presented at UR 2024 conference.</a>
+                <!-- <br>
+                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a> -->
+              </td>
+            </tr>
+                        
+                                 
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                    <p style="text-align:right;font-size:small;">
+                      <span id="last-updated"></span> &nbsp;|&nbsp;
+                      <a href="https://github.com/jonbarron/jonbarron_website">Website Template</a>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      // Get the current date
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      const today = new Date().toLocaleDateString(undefined, options);
+      
+      // Insert the last updated date into the specified element
+      document.getElementById('last-updated').textContent = `Last updated: ${today}`;
+    </script>
+  </body>
+</html>
